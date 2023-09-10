@@ -1,5 +1,6 @@
 body {
     font-family: 'Courier New', monospace;
+    background-color: #f5d9b5;
 }
 
 #navbar {
@@ -22,4 +23,9 @@ body {
 
 #navbar a:hover {
     background-color: gray;
+}
+
+.foodImg {
+    height: auto;
+    width: 300px;
 }
