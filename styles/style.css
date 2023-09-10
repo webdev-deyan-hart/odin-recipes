@@ -1,12 +1,37 @@
+html {
+    background-color: #e0ddd4;
+}
+
 body {
     font-family: 'Courier New', monospace;
     background-color: #f5d9b5;
+    margin: 0px 10% 0px 10%;
+}
+
+h1 {
+    margin: 0;
+}
+
+ul {
+    list-style-type: square;
+    margin-right: 25%;
+}
+
+li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+p {
+    margin-right: 50%;
 }
 
 #navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    background-color: #000000;
 }
 
 #navbar li {
@@ -16,7 +41,6 @@ body {
 #navbar a {
     text-decoration: none;
     display: block;
-    background-color: black;
     color: white;
     padding: 8px;
 }
@@ -25,7 +49,21 @@ body {
     background-color: gray;
 }
 
+.mainBody {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
 .foodImg {
     height: auto;
     width: 300px;
+}
+
+.directions ul {
+    list-style-type: none;
+}
+
+.directions ul li ul {
+    list-style-type: none;
+    display: inline;
 }
