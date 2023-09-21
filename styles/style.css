@@ -3,15 +3,20 @@ html {
 }
 
 body {
-    font-family: 'Courier New', monospace;
+    font-family: Tahoma, sans-serif;
     background-color: #f5d9b5;
-    width: 980px;
+    width: 45%;
     margin: 0 auto;
     border: #000000 2px dotted;
 }
 
 h1 {
     margin: 0;
+    font-family: 'Courier New', monospace;
+}
+
+h2 {
+    font-family: 'Courier New', monospace;
 }
 
 ul {
@@ -77,4 +82,9 @@ p {
 .directions ul li ul {
     list-style-type: none;
     display: inline;
+}
+
+.overview {
+    border-bottom: 1px #000000 double;
+    border-top: 1px #000000 double;
 }
