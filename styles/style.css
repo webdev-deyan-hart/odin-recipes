@@ -21,7 +21,7 @@ h2 {
 
 ul {
     list-style-type: square;
-    margin-right: 25%;
+    
 }
 
 li {
@@ -38,27 +38,29 @@ p {
 }
 
 #navbar {
-    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    height: 50px;
     background-color: #000000;
+    align-items: center;
 }
 
-#navbar li {
-    float: left;
+#navbar > * {
+    flex: 1;
+    list-style: none;
+    text-align: center;
 }
 
 #navbar a {
     text-decoration: none;
-    display: block;
     color: white;
-    padding: 8px;
 }
 
-#navbar a:hover {
+/* #navbar:hover {
     background-color: gray;
-}
+} */
 
 .mainBody {
     margin: 1% 2%;
@@ -69,19 +71,47 @@ p {
     width: 300px;
 }
 
-.two_per_row {
-    display: inline-block;
-    width: 220px;
-    margin: 0 5px 0 0;
+.ingredients_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.directions ul {
-    list-style-type: none;
+.ingredients_container > * {
+    flex-basis: 200px;
+    align-items: left;
 }
 
-.directions ul li ul {
-    list-style-type: none;
-    display: inline;
+.two_per_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.two_per_column > * {
+    flex: 1;
+    justify-content: center;
+    padding: 0;
+}
+
+.flex_directions {
+    display: flex;
+}
+
+.flex_directions > * {
+}
+
+.flex_directions > h3 {
+    flex: auto;
+    flex-wrap: wrap;
+    margin: 0;
+    color: aqua;
+    border: 1px solid black;
+}
+
+.flex_directions > p {
+    color: rebeccapurple;
+    border: 1px solid red;
+    margin: 0;
 }
 
 .overview {
